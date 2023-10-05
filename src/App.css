@@ -1,0 +1,67 @@
+.titleImage {
+    aspect-ratio: 16/9;
+    height: 200px;
+    width: 200px;
+}
+
+.titleText {
+    margin: 0 auto;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    padding: 8px 12px;
+    font-size: 24px;
+    margin: 0 auto;
+    color: white;
+    border: 2px solid white;
+    background-color: #FF4000;
+    outline: none;
+    border-radius: 6px;
+    font-family: inherit;
+    scale: 0.95;
+    transition: all .2s;
+}
+
+.searchBar::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.searchBar:hover {
+    scale: 1;
+}
+
+.searchbar:active, .searchBar:focus {
+    scale: 1;
+}
+
+.listContainer, .emptyDataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyDataContainer {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.listItemContainer {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 6px;
+    max-width: 400px;
+}
+
+.listItemTitle, .listItemSubtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
